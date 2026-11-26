@@ -1,0 +1,24 @@
+name: Feature request
+description: Probe, drop-images, or something else for v0.2
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What failure mode is not covered?
+    validations:
+      required: true
+  - type: checkboxes
+    id: v2-area
+    attributes:
+      label: Area
+      options:
+        - label: Liveness probe (extra billed request)
+        - label: Drop-images payload rewrite
+        - label: Better summary / grouping
+        - label: Other
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
