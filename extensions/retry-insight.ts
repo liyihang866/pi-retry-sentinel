@@ -146,8 +146,7 @@ export default function retryInsight(pi: ExtensionAPI): void {
 		const bySignature = new Map<string, number>();
 		for (const f of failures)
 			bySignature.set(f.signature, (bySignature.get(f.signature) ?? 0) + 1);
-		for (const [sig, count] of bySignature)
-			lines.push(`  ×${count} ${sig}`);
+		for (const [sig, count] of bySignature) lines.push(`  ×${count} ${sig}`);
 		for (const f of failures) {
 			lines.push(
 				`  - ${(f.durationMs / 1000).toFixed(1)}s  ${f.errorMessage.slice(0, 120)}`,
