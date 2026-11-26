@@ -1,0 +1,15 @@
+name: Feature request
+description: Something the sentinel does not do today
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What failure mode is not covered?
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

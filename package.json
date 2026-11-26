@@ -1,0 +1,54 @@
+{
+	"name": "pi-retry-sentinel",
+	"version": "0.1.0",
+	"description": "A sentinel for pi's retry loop: stop when the same cause repeats, and report the attempt history.",
+	"type": "module",
+	"keywords": [
+		"pi-package",
+		"pi",
+		"pi-extension",
+		"retry",
+		"timeout",
+		"sentinel",
+		"same-cause",
+		"ai-agent"
+	],
+	"author": {
+		"name": "liyihang866",
+		"url": "https://github.com/liyihang866"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/liyihang866/pi-retry-sentinel.git"
+	},
+	"homepage": "https://github.com/liyihang866/pi-retry-sentinel",
+	"bugs": {
+		"url": "https://github.com/liyihang866/pi-retry-sentinel/issues"
+	},
+	"files": [
+		"extensions/",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	],
+	"pi": {
+		"extensions": [
+			"./extensions/retry-sentinel.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"scripts": {
+		"check": "tsc -p ."
+	},
+	"devDependencies": {
+		"@types/node": "^22.0.0",
+		"typescript": "^5.7.0"
+	},
+	"engines": {
+		"node": ">=20"
+	}
+}
