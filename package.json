@@ -1,0 +1,48 @@
+{
+	"name": "pi-retry-insight",
+	"version": "0.1.0",
+	"description": "Same-cause timeout insight for pi: structured failure summary instead of one line of 'Request timed out'. Diagnose-only, zero payload rewrite, zero extra requests.",
+	"type": "module",
+	"keywords": [
+		"pi-package",
+		"pi",
+		"pi-extension",
+		"retry",
+		"timeout",
+		"diagnostics",
+		"ai-agent"
+	],
+	"author": "lyihang",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/liyihang866/pi-retry-insight.git"
+	},
+	"homepage": "https://github.com/liyihang866/pi-retry-insight",
+	"bugs": {
+		"url": "https://github.com/liyihang866/pi-retry-insight/issues"
+	},
+	"files": [
+		"extensions/",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	],
+	"pi": {
+		"extensions": ["./extensions/retry-insight.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"scripts": {
+		"check": "tsc -p ."
+	},
+	"devDependencies": {
+		"typescript": "^5.7.0",
+		"@types/node": "^22.0.0"
+	},
+	"engines": {
+		"node": ">=20"
+	}
+}
